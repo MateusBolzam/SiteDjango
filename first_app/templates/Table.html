@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+</head>
+
+<body>
+    
+    {% for acesso in lista_acessos%}
+        <tr>
+            <br>
+            <td>{{ acesso.pagina}}</td>
+            <td>{{ acesso.date}}</td>
+        </tr>
+    {% endfor %}
+
+
+    <footer>
+        <p>Tabela Puxada da Model</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+
