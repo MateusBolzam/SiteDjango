@@ -11,5 +11,8 @@ class FormPersona(forms.ModelForm):
     class Meta:
         model = Personagem
         fields = "__all__"
+        
+        #nao sei oq dizer
+        
     
     
