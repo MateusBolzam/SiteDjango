@@ -1,10 +1,11 @@
-<!DOCTYPE html>
+{% extends "base.html" %}
+{%load static%}
 <html lang="pt-BR">
 <head>
 </head>
 
 <body>
-    
+    {% block body_block%}
     {% for acesso in lista_acessos%}
         <tr>
             <br>
@@ -17,6 +18,7 @@
     <footer>
         <p>Tabela Puxada da Model</p>
     </footer>
+    {%endblock%}
 </body>
 </html>
 

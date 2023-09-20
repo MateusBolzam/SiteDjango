@@ -1,11 +1,12 @@
-<!doctype html>
-<html lang="pt_BR">
+{% extends "base.html" %}
+{%load static%}
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
   </head>
   <body>
+    {% block body_block%}
     <h1>Forms</h1>
 
     
@@ -17,6 +18,6 @@
         </form>
     </div>
 
-
+    {% endblock%}
   </body>
 </html>

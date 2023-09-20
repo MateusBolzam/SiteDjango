@@ -1,15 +1,21 @@
+{% extends "base.html" %}
+
 {%load static%}
+
 <html>
     <head>
         <title>
             Home
         </title>
+        {% block css  %}
         <link rel="stylesheet"  href="{% static "Aula1.css"%}" />
+        {% endblock %}
     </head>
 
     <!--Meu tema Escolhido Foi Digimon, por causa do Jogo Digimon Wolrd 1, do Play1-->
     
     <body>
+        {% block body_block  %}
         <main class="main"></main>
         <nav>
             <ul>
@@ -102,6 +108,6 @@
             </p>
         </footer>
 
+        {% endblock  %}
     </body>
 </html>
-

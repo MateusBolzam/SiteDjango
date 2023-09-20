@@ -48,7 +48,7 @@ img#img{
 
 .Agumon{
     text-align: left;
-    height: 200px;
+    
     width: 50%;
     background-color: orange;
     border-style: solid;
@@ -60,7 +60,7 @@ img#img{
 
 .Gabumon{
     text-align: left;
-    height: 200px;
+    
     width: 50%;
     background-color: lightblue;
     border-style: solid;
