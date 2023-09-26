@@ -4,11 +4,11 @@ from .models import Topico,Pagina,Acessos,Personagem
 
 
 
-class PersonagemAdmin(admin.ModelsAdmin):
+class PersonagemAdmin(admin.ModelAdmin):
     
     fields = ['classe','nome','atributo']
     search_fields = ['classe','nome']
-    list_filter = ['classe','nome']
+    list_filter = ['classe']
     
 
 
