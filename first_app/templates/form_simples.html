@@ -8,16 +8,17 @@
   </head>
   <body>
     {% block body_block%}
-    <h1>Forms</h1>
+    <h1>Forms Inicial</h1>
 
     
     <div class="container">
-        <form method="POST">
-            {{ form.as_p }}
-            {% csrf_token %}
-            <input type="submit" class="btn btn-primary" value="Submit">
-        </form>
-    </div>
+      <form method="POST">
+          {{ form.as_p }}
+          {% csrf_token %}
+          <input type="submit" class="btn btn-primary" value="Submit">
+      </form>
+  </div>
+  
 
     {% endblock%}
   </body>

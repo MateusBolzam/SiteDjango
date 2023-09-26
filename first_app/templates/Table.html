@@ -5,20 +5,29 @@
 </head>
 
 <body>
-    {% block body_block%}
-    {% for acesso in lista_acessos%}
-        <tr>
-            <br>
-            <td>{{ acesso.pagina}}</td>
-            <td>{{ acesso.date}}</td>
-        </tr>
-    {% endfor %}
-
-
-    <footer>
+    {% block body_block %}
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Página</th>
+                <th>Data</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for acesso in lista_acessos %}
+            <tr>
+                <td>{{ acesso.pagina }}</td>
+                <td>{{ acesso.date }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    
+    <footer class="footer">
         <p>Tabela Puxada da Model</p>
     </footer>
-    {%endblock%}
+    {% endblock %}
+    
 </body>
 </html>
 
