@@ -5,7 +5,7 @@ class FormSimples(forms.Form):
     nome = forms.CharField(max_length=128)
     sobrenome = forms.CharField(max_length=128)
     email = forms.EmailField()
-    
+   
 class FormPersona(forms.ModelForm):
     
     class Meta:
