@@ -7,6 +7,7 @@ from .forms import FormSimples,FormPersona
 
 
 
+
 # Create your views here.
 
 
@@ -53,3 +54,7 @@ def personagem(request):
             print("Erro")
             
     return render(request, 'formPersona.html',{'form':form})
+
+#class IndexView(TemplateView):
+    
+    #template_name = 'Aula1.html'

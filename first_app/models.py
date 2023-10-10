@@ -47,3 +47,24 @@ class Personagem(models.Model):
     def __str__(self):
         return self.nome
     
+
+class Peneira(models.Model):
+    
+    temperature = models.IntegerField()
+    name = models.CharField(max_length=128)
+    
+    def __str__(self):
+        return str(self.name)
+
+    
+class Evento(models.Model):
+    
+    idPeneira = models.ForeignKey(Peneira, on_delete=models.CASCADE)
+    create = models.DateField()
+    temperature = models.IntegerField()
+    nome = models.CharField(max_length=128, default='evento')
+    
+    
+    def __str__(self):
+        return str(self.nome)
+
